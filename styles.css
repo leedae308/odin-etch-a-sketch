@@ -1,27 +1,39 @@
 /* styles.css */
 
+*{
+    /* height: 100%; */
+    /* width: 100%; */
+}
+
 body{
     display: flex;
     margin: 0;
+    height:100%;
+    justify-content: flex-start;
+    align-items:center;
 }
 
 .container{
     display: flex;
     flex-direction: column;
+    height:100vh;
+    width:100vh;
     /* border: 1px solid black; */
     /* flex:0 0 100&; */
-    height:100%;
+    /* height:100%; */
 }
 
 .rowsContainer{
     display:flex;
-    /* flex:1; */
+    flex:1;
     /* padding: 20px; */
     /* border:1px solid black; */
+    aspect-ratio: 16/1;
 }
 
 .gridBox{
     flex:1;
-    padding:20px;
+    /* padding:20px; */
     border:1px solid black;
+    aspect-ratio: 1/1;
 }
