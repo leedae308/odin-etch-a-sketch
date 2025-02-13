@@ -3,6 +3,12 @@ const box = document.querySelectorAll(".gridBox");
 box.forEach((gridBox) => {
     gridBox.addEventListener("mouseover", (event) => {
         event.target.style.background = "orange";
+        if (event.target.style.opacity == "") {
+            event.target.style.opacity = "0";
+        }
+        if (event.target.style.opacity != 1) {
+            event.target.style.opacity = parseFloat(event.target.style.opacity) + 0.1;
+        }
     });
 });
 
@@ -18,6 +24,12 @@ btn.addEventListener('click', (e) => {
         box.forEach((gridBox) => {
             gridBox.addEventListener("mouseover", (event) => {
                 event.target.style.background = "orange";
+                if (event.target.style.opacity == "") {
+                    event.target.style.opacity = "0";
+                }
+                if (event.target.style.opacity != 1) {
+                    event.target.style.opacity = parseFloat(event.target.style.opacity) + 0.1;
+                }
             });
         });
 
